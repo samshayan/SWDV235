@@ -1,0 +1,451 @@
+@font-face {
+  font-family: 'Courgette';
+  src: url("../fonts/Courgette-Regular.ttf");
+}
+
+/* 
+	Author: Sam Shayan
+	File name: bizStyle.css
+*/
+/* ------------------Home Page--------------------------- */
+#bg {
+  height: 59%;
+  width: 90%;
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+  padding: 0 5em;
+  -webkit-filter: opacity(45%);
+  filter: opacity(45%);
+}
+
+h3#leftSlo {
+  float: right;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+h3#rightSlo {
+  float: left;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+h2#textShadow {
+  text-shadow: 2px 2px 4px #968e8e;
+}
+
+/* ------------------------NAVIGATION------------------------------- */
+nav {
+  background: url(../images/banner.png) right no-repeat/30%;
+  background-color: lightseagreen;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin-bottom: 4px;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin-right: 2px;
+  padding-left: 1px;
+  font-family: 'Courgette', cursive;
+}
+
+nav > ul > li {
+  display: inline;
+  border: 1px solid #FFFFFF;
+  padding: 1em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+
+#navicon {
+  display: none;
+  border-radius: 60%;
+}
+
+/* ---------------------Body--------------------------------- */
+body {
+  color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body h2 {
+  color: #6989ca;
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: center;
+}
+
+body h3 {
+  color: #000033;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+body footer {
+  font-size: 75%;
+  font-weight: bold;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  margin-top: 4px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cee3e2), color-stop(#abd7d5), color-stop(#87cbc7), color-stop(#5ebfb9), to(#20b2aa));
+  background-image: linear-gradient(to top, #cee3e2, #abd7d5, #87cbc7, #5ebfb9, #20b2aa);
+}
+
+body p {
+  text-indent: 20px;
+}
+
+body #leftfooter {
+  float: left;
+  padding-left: 3em;
+}
+
+body #rightfooter {
+  float: right;
+  padding-right: 3em;
+}
+
+/* ---------------------------Main-------------------------------- */
+main {
+  background-color: lightcyan;
+}
+
+main aside {
+  background: radial-gradient(white, #3093a0, #1686b3);
+  border: 2px solid #328fa0;
+  border-radius: 30px;
+  -webkit-box-shadow: rgba(93, 101, 148, 0.4) 0px 0px 20px 10px;
+          box-shadow: rgba(93, 101, 148, 0.4) 0px 0px 20px 10px;
+  float: right;
+  padding: 2em 10em;
+  margin: 7em 25em;
+}
+
+main article::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+main article div p {
+  border: 2px dashed black;
+}
+
+main caption {
+  padding: 20px;
+  font-weight: bold;
+}
+
+main fieldset {
+  display: inline-block;
+}
+
+main .clear_float {
+  clear: both;
+}
+
+/* --------------------------Tire & Animation-------------------*/
+#tires {
+  text-align: center;
+  margin-left: 30%;
+  margin-bottom: 2%;
+  -webkit-animation: round 1s  infinite;
+          animation: round 1s  infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes round {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes round {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* ------------------------Cars Info table------------------------ */
+table.forCustomerInfo {
+  width: 100%;
+  border: 4px solid black;
+  border-collapse: collapse;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+table.forCustomerInfo thead tr {
+  height: 32px;
+}
+
+table.forCustomerInfo th,
+table.forCustomerInfo td {
+  border: 2px solid #968e8e;
+  vertical-align: top;
+  padding: 10px;
+}
+
+table.forCustomerInfo .modColumns {
+  background-color: lightgoldenrodyellow;
+}
+
+table.forCustomerInfo .aboutModel {
+  background-color: aliceblue;
+}
+
+table.forCustomerInfo .prices {
+  background-color: blanchedalmond;
+}
+
+/* ------------------Cars FigureBox------------------ */
+section figure {
+  width: 50%;
+  margin: 0 0 20px 0;
+  float: left;
+  text-align: center;
+}
+
+section figure figcaption {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+section figure .cars {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  min-height: 300px;
+  -webkit-box-shadow: 5px 10px 8px 10px #968e8e;
+          box-shadow: 5px 10px 8px 10px #968e8e;
+  text-align: center;
+  border-radius: 20%;
+}
+
+#carAdj {
+  padding-top: 50px;
+  float: left;
+}
+
+/* -------------------Contact form-------------------------------- */
+form.ContactForm {
+  margin: auto 35em;
+}
+
+form.ContactForm label {
+  display: inline-block;
+  clear: left;
+  width: 250px;
+}
+
+form.ContactForm .textArea label {
+  vertical-align: top;
+}
+
+/*--------------------------flex -------------------------------*/
+section figure {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/*  ---------------Mobile Styles: 0px to 480px ------------------*/
+@media (max-width: 480px) {
+  nav {
+    background: url(../images/banner.png) top right no-repeat/30%;
+    background-color: lightseagreen;
+    font-weight: bold;
+    padding: 20px 20px;
+    margin-bottom: 4px;
+  }
+  nav.horizontal a {
+    font-size: 1.5em;
+    line-height: 2.2em;
+  }
+  nav.horizontal ul {
+    display: none;
+  }
+  ul.menu > li {
+    display: block;
+  }
+  nav a#navicon {
+    display: block;
+  }
+  a#navicon:hover + ul,
+  nav.horizontal ul:hover {
+    display: block;
+  }
+  main .enewsCheck {
+    font-size: .8em;
+  }
+  main form.ContactForm {
+    margin: auto;
+  }
+  main article {
+    margin: 0 2em;
+    font-size: 1.5em;
+  }
+  main article .inputAdj {
+    width: 100%;
+  }
+  main article .btn {
+    font-size: 1em;
+  }
+  main article aside {
+    float: right;
+    padding: 1.5em 1.5em;
+    margin: 2.5em 2.5em;
+    margin: 3em 0;
+  }
+  #breakpointSelect {
+    display: inline-block;
+  }
+  #message {
+    margin-left: 20%;
+  }
+  #bg {
+    background-size: cover;
+    height: 500px;
+    width: 480px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-filter: opacity(100%);
+    filter: opacity(100%);
+  }
+  #leftfooter,
+  #rightfooter {
+    display: none;
+  }
+  figure {
+    width: 100%;
+    padding-left: 2em;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  figure figcaption {
+    border: 1px solid black;
+    margin-left: 6em;
+    width: 80%;
+  }
+  #carAdj .cars {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 25em;
+    min-height: 10em;
+  }
+}
+
+/* ----------------tablet---------------*/
+@media (min-width: 481px) and (max-width: 780px) {
+  nav {
+    background: none;
+    background-color: lightblue;
+  }
+  nav ul li {
+    margin-right: 0em;
+    position: relative;
+    width: 30%;
+    font-size: 1.2em;
+  }
+  nav a:hover {
+    font-size: 1em;
+    color: lightseagreen;
+  }
+  body .logos {
+    background-repeat: no-repeat;
+    margin: 1em;
+  }
+  body h2 {
+    font-size: 2em;
+  }
+  body h3 {
+    font-size: 1.5em;
+  }
+  body main article {
+    margin: 0 2em;
+    font-size: 1.5em;
+  }
+  body aside {
+    display: none;
+  }
+  body table.forCustomerInfo {
+    font-size: 1.25em;
+  }
+  body form.ContactForm {
+    margin: 0em 1em;
+    font-size: 1.25em;
+  }
+  body form .contForm {
+    width: 50%;
+    height: 2%;
+  }
+  body footer {
+    background-color: lightblue;
+  }
+  #rightfooter,
+  #leftfooter {
+    display: none;
+  }
+  #bg {
+    background-size: cover;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  form .contTextarea {
+    width: 50%;
+  }
+  .btn {
+    font-size: 1em;
+  }
+  #newsId {
+    font-size: .9em;
+  }
+  input.inputAdj {
+    width: 50%;
+    display: block;
+    float: right;
+    margin-right: 3em;
+  }
+  fieldset {
+    display: block;
+  }
+  fieldset div br {
+    display: none;
+  }
+  fieldset label.enewsText {
+    padding-left: 2em;
+  }
+  fieldset .enewsCheck {
+    font-size: .75em;
+  }
+  fieldset input.textareaAdj {
+    margin-left: 3em;
+  }
+  figure {
+    width: 90%;
+    padding-left: 10em;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  #carAdj .cars {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}

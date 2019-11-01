@@ -1,0 +1,30 @@
+
+// @mixin screen-media($minWidth, $maxWidth) {
+//     @if $minWidth > 0px {
+//         @media only screen and (min-width: $minWidth) {
+//             @content;
+//         }
+//     }
+
+//     @else {
+//         @media only screen and (max-width: $maxWidth) {
+//             @content;
+//         }
+//     }
+// }
+@mixin phone {
+    @media (max-width: 480px ){
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: 481px)and (max-width:780px){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 781px){
+        @content;
+    }
+    
+}

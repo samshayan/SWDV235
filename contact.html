@@ -1,0 +1,70 @@
+﻿<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="personal business page" />
+    <meta name="author" content="Sam Shayan">
+
+    <link rel="stylesheet" href="css/bizStyle.css">
+    <script src="JavaScript/port_formsubmit.js"></script>
+</head>
+
+<body>
+    <nav class="horizontal">
+        <a id="navicon" href="#"><img src="images/navi.png" alt="icon" /></a>
+        <ul class="menu">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="Newslette.html">E-Newslette</a></li>
+            <li> <a href="Car.html">Our Cars</a></li>
+            <li> <a href="contact.aspx">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <form class="ContactForm" action="http://www.example.com/portfolio" enctype="text/plain" method="post">
+            <br>
+            <div>
+                <label class="info" for="name">Full Name</label>
+                <input class="contForm" type="text" name="name" id="name" placeholder="First & Last Name" required>
+            </div>
+            <br>
+            <div>
+                <label class="info" for="email">E-mail</label>
+                <input class="contForm" type="email" name="email" id="email" placeholder="example@gmail.com"><br><br>
+
+            </div>
+            <div>
+                <label class="info" for="phone">Telephone No</label>
+                <input class="contForm" type="tel" name="phone" id="phone" placeholder="208-555-5555" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"><br><br>
+            </div>
+
+            <br><br>
+            <div class="textArea">
+                <label for="message" class="info">Message</label>
+                <textarea name="Message" id="message" cols="50" rows="10"></textarea>
+            </div>
+            <br><br>
+            <div>
+                <input type="submit" id="submit" value="Submit" class="btn">
+                <input type="reset" id="reset" value="Reset" class="btn">
+            </div>
+        </form><br>
+        <div><img id="tires" src="images/tires.png" alt="tires" height="300px"></div>
+    </main>
+    <footer>
+        <p id="leftfooter">Email me: <a href="mailto:samirshayan@mycwi.cc">samirshayan@mycwi.cc</a><br><br>Official website: <a href="www.bmw.us">www.bmw.us</a> </p>
+        <!--social network logos-->
+        <a href="https://www.linkedin.com/" class="logos" target="_blank"><img src="images/linin.png" height="50px"></a>
+        <a href="https://github.com/" class="logos" target="_blank"><img src="images/github.png" height="56px"></a>
+        <a href="https://plus.google.com/" class="logos" target="_blank"><img src="images/google.png" height="50px"></a>
+        <a href="https://twitter.com/" class="logos" target="_blank"><img src="images/twitter.png" height="50px"></a>
+        <a href="https://facebook.com/" class="logos" target="_blank"><img src="images/facebook.png" height="50px"></a>
+
+        <p id="rightfooter">Phone No: <a href="tel:+1555555555">555-555-5555</a> <br> <br> Fax No: <a href="tel:+1555555555">555-555-5555</a></p>
+
+    </footer>
+</body>
+
+</html>
